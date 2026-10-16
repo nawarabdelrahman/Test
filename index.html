@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bike HEMA - برجر وفراخ كرسبي ووجبات مميزة بأسعار مناسبة. اطلب وجبتك الآن!">
+  <title>Bike HEMA | برجر وفراخ</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top main-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="Img/logo.jpg" alt="Bike HEMA Logo" class="navbar-logo">
+        <span>Bike <span class="brand-accent">HEMA</span></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="فتح القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">مميزاتنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">المنيو</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+        </ul>
+
+        <button class="btn btn-brand cart-nav-btn" data-bs-toggle="offcanvas"
+          data-bs-target="#cartDrawer" aria-controls="cartDrawer">
+          <i class="bi bi-bag"></i>
+          السلة
+          <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <span class="hero-badge">
+              <i class="bi bi-fire"></i>
+              الطعم اللي يستاهل التجربة
+            </span>
+
+            <h1>
+              جعان؟<br>
+              <span>خليها Bike HEMA!</span>
+            </h1>
+
+            <p>
+              استمتع بأجمد البرجر والفراخ الكرسبي والوجبات المميزة،
+              بطعم تحبه وسعر يناسبك.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-brand btn-lg">
+                اطلب دلوقتي <i class="bi bi-arrow-left"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline-light btn-lg">
+                مكاننا فين؟
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>طعم مميز</span>
+              </div>
+              <div>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>اختيارات متنوعة</span>
+              </div>
+              <div>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>طلب سهل</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <img src="Img/Hero.jfif" alt="وجبات Bike HEMA"
+              class="hero-image">
+            <div class="hero-floating-card">
+              <i class="bi bi-star-fill"></i>
+              <div>
+                <strong>Bike HEMA</strong>
+                <small>اختار وجبتك واستمتع!</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding why-section" id="why">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-eyebrow">ليه Bike HEMA؟</span>
+        <h2>تجربة أكل <span>على مزاجك</span></h2>
+        <p>كل اللي بتحبه في مكان واحد.</p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-fire"></i></div>
+            <h3>طعم مميز</h3>
+            <p>اختيارات متنوعة من البرجر والفراخ والوجبات اللي بتحبها.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-basket2"></i></div>
+            <h3>منيو متنوع</h3>
+            <p>اختار وجبتك المفضلة من المنيو بسهولة.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-whatsapp"></i></div>
+            <h3>طلب سهل</h3>
+            <p>جهّز طلبك وابعت تفاصيله على واتساب بخطوات بسيطة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section-padding menu-section" id="menu">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-eyebrow">منيو Bike HEMA</span>
+        <h2>اختار <span>وجبتك المفضلة</span></h2>
+        <p>تصفح الأصناف واستخدم البحث للوصول لوجبتك بسرعة.</p>
+      </div>
+
+      <div class="menu-toolbar">
+        <div class="menu-filters" id="menuFilters">
+          <button class="filter-btn active" data-category="all">الكل</button>
+          <button class="filter-btn" data-category="meals">الوجبات</button>
+          <button class="filter-btn" data-category="burger">برجر</button>
+          <button class="filter-btn" data-category="chicken">فراخ</button>
+          <button class="filter-btn" data-category="extras">إضافات</button>
+        </div>
+
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="search" id="searchInput"
+            placeholder="دور على وجبتك..." aria-label="البحث عن وجبة">
+        </div>
+      </div>
+
+      <div class="row g-4" id="productsGrid">
+        <!-- المنتجات بتظهر تلقائيًا من script.js -->
+      </div>
+
+      <div id="emptyProducts" class="empty-products d-none">
+        <i class="bi bi-emoji-frown"></i>
+        <h3>ملقيناش الصنف ده</h3>
+        <p>جرّب تبحث باسم تاني أو اختار قسم مختلف.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer Banner -->
+  <section class="offer-section">
+    <div class="container">
+      <div class="offer-content">
+        <div>
+          <span class="offer-label">مستني إيه؟</span>
+          <h2>اختار وجبتك وخلي يومك أحلى!</h2>
+          <p>شوف المنيو وجهّز طلبك بسهولة.</p>
+        </div>
+        <a href="#menu" class="btn btn-light btn-lg">
+          شوف المنيو <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-eyebrow">تواصل معنا</span>
+        <h2>مستنيين <span>زيارتك!</span></h2>
+        <p>تعالى زورنا أو تواصل معانا على واتساب.</p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h3>عنوان المطعم</h3>
+                <p>شارع بورسعيد - أمام صيدلية الشعب وفريش بيري</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h3>مواعيد العمل</h3>
+                <p>يوميًا من 1 ظهرًا إلى 2 صباحًا</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <h3>اطلب على واتساب</h3>
+                <p>ابعتلنا طلبك مباشرة.</p>
+                <a href="https://wa.me/201099786562" target="_blank"
+                  rel="noopener noreferrer" class="contact-link">
+                  تواصل معنا <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="bi bi-facebook"></i></div>
+              <div>
+                <h3>صفحتنا على فيسبوك</h3>
+                <p>تابع أخبارنا وكل جديد.</p>
+                <a href="https://www.facebook.com/profile.php?id=61576990505750"
+                  target="_blank" rel="noopener noreferrer" class="contact-link">
+                  تابعنا على فيسبوك <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="map-wrapper">
+            <!-- استبدل الرابط التالي برابط Embed الحقيقي لموقع المطعم على Google Maps -->
+            <iframe
+              title="موقع Bike HEMA على الخريطة"
+              src="https://maps.google.com/maps?q=Port%20Said%20Street%20Egypt&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="100%" style="border:0;"
+              loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-brand">
+          <img src="Img/logo.jpg" alt="Bike HEMA">
+          <span>Bike <strong>HEMA</strong></span>
+        </a>
+
+        <p>طعم مميز ووجبتك المفضلة في مكان واحد.</p>
+
+        <div class="footer-socials">
+          <a class="footer-social facebook-social"
+            href="https://www.facebook.com/profile.php?id=61576990505750"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="صفحة Bike HEMA على فيسبوك" title="فيسبوك">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a class="footer-social whatsapp-social"
+            href="https://wa.me/201099786562"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="تواصل مع Bike HEMA عبر واتساب" title="واتساب">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>جميع الحقوق محفوظة © <span id="currentYear"></span> Bike HEMA</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1"
+    id="cartDrawer" aria-labelledby="cartDrawerLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cartDrawerLabel">
+        <i class="bi bi-bag-check"></i> سلة المشتريات
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+        aria-label="إغلاق"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div id="cartItems"></div>
+
+      <div id="emptyCart" class="empty-cart">
+        <i class="bi bi-basket"></i>
+        <h3>السلة فاضية</h3>
+        <p>اختار وجبتك المفضلة من المنيو.</p>
+        <button class="btn btn-brand" data-bs-dismiss="offcanvas"
+          onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+          تصفح المنيو
+        </button>
+      </div>
+
+      <div id="cartSummary" class="cart-summary d-none">
+        <div class="cart-total-row">
+          <span>الإجمالي</span>
+          <strong><span id="cartTotal">0</span> جنيه</strong>
+        </div>
+
+        <button class="btn btn-brand w-100 mt-3" id="checkoutBtn">
+          إتمام الطلب <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <button class="btn btn-outline-secondary w-100 mt-2" id="clearCartBtn">
+          إفراغ السلة
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1"
+    aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content checkout-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLabel">بيانات الطلب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="إغلاق"></button>
+        </div>
+
+        <form id="checkoutForm">
+          <div class="modal-body">
+            <p class="checkout-note">
+              اكتب بياناتك عشان نجهز رسالة طلبك على واتساب.
+            </p>
+
+            <div class="mb-3">
+              <label for="customerName" class="form-label">الاسم</label>
+              <input type="text" class="form-control" id="customerName"
+                name="customerName" placeholder="اكتب اسمك" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="customerPhone" class="form-label">رقم الموبايل</label>
+              <input type="tel" class="form-control" id="customerPhone"
+                name="customerPhone" placeholder="01xxxxxxxxx"
+                inputmode="numeric" pattern="01[0-9]{9}" required>
+              <small class="form-text">اكتب رقم موبايل مصري مكوّن من 11 رقمًا ويبدأ بـ 01.</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="customerAddress" class="form-label">العنوان</label>
+              <textarea class="form-control" id="customerAddress"
+                name="customerAddress" rows="3"
+                placeholder="اكتب عنوان التوصيل بالتفصيل" required></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="orderNotes" class="form-label">ملاحظات إضافية (اختياري)</label>
+              <textarea class="form-control" id="orderNotes"
+                name="orderNotes" rows="2"
+                placeholder="أي تفاصيل إضافية عن الطلب"></textarea>
+            </div>
+
+            <div class="checkout-total">
+              إجمالي الطلب: <strong><span id="checkoutTotal">0</span> جنيه</strong>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary"
+              data-bs-dismiss="modal">إلغاء</button>
+            <button type="submit" class="btn btn-brand">
+              إرسال الطلب على واتساب <i class="bi bi-whatsapp"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3">
+    <div id="siteToast" class="toast" role="status" aria-live="polite"
+      aria-atomic="true">
+      <div class="toast-header">
+        <i class="bi bi-check-circle-fill text-success ms-2"></i>
+        <strong class="me-auto">Bike HEMA</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"
+          aria-label="إغلاق"></button>
+      </div>
+      <div class="toast-body" id="toastMessage">تمت العملية بنجاح.</div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201099786562" class="floating-whatsapp"
+    target="_blank" rel="noopener noreferrer"
+    aria-label="تواصل معنا على واتساب" title="تواصل معنا على واتساب">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="toTop" class="to-top" aria-label="العودة إلى أعلى الصفحة">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
